@@ -10,9 +10,10 @@ def randInt(min= "", max= "" ):
     
     if min != "" and max != "":
         if int(min) > int(max):
-            holder = min
-            min = max
-            max = holder
+            # holder = min
+            # min = max
+            # max = holder
+            min, max = max, min
         if int(max) < 0:
             max = str(-1*int(max))
             print("max is:", max)
